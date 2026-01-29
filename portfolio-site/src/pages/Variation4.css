@@ -1,0 +1,8 @@
+/* Variation 4: Gradient Modern */
+.variation-4 {
+    background: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #0F172A 100%);
+}
+
+.variation-4 .section:nth-child(even) {
+    background: rgba(255, 255, 255, 0.02);
+}

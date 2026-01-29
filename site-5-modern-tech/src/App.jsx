@@ -1,0 +1,42 @@
+import { useEffect } from 'react';
+import Header from '../../shared/components/Header';
+import Hero from '../../shared/components/Hero';
+import About from '../../shared/components/About';
+import Experience from '../../shared/components/Experience';
+import Skills from '../../shared/components/Skills';
+import Projects from '../../shared/components/Projects';
+import Education from '../../shared/components/Education';
+import Contact from '../../shared/components/Contact';
+import Footer from '../../shared/components/Footer';
+import profile3 from '../../profiles/profile3.json';
+import './App.css';
+
+function App() {
+  useEffect(() => {
+    document.body.className = 'variation-3';
+    return () => {
+      document.body.className = '';
+    };
+  }, []);
+
+  return (
+    <div className="variation-3">
+      <a href="#main" className="skip-to-main">
+        Skip to main content
+      </a>
+      <Header variant="variation-3" data={profile3} />
+      <main id="main">
+        <Hero data={profile3} variant="variation-3" />
+        <About data={profile3} />
+        <Experience data={profile3} />
+        <Skills data={profile3} />
+        <Projects data={profile3} />
+        <Education data={profile3} />
+        <Contact data={profile3} />
+      </main>
+      <Footer variant="variation-3" data={profile3} />
+    </div>
+  );
+}
+
+export default App;

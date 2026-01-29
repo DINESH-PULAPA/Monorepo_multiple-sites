@@ -1,0 +1,81 @@
+.skills {
+    background-color: var(--color-bg);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--space-8);
+    margin-top: var(--space-12);
+}
+
+.skill-group {
+    padding: var(--space-8);
+}
+
+.skill-group-name {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-bold);
+    color: var(--color-primary);
+    margin-bottom: var(--space-6);
+    text-align: center;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    justify-content: center;
+}
+
+.skill-tag {
+    display: inline-block;
+    padding: var(--space-2) var(--space-4);
+    background-color: var(--color-secondary);
+    color: var(--color-text);
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    border-radius: var(--radius-full);
+    transition: all var(--transition-base);
+    cursor: default;
+}
+
+.skill-tag:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: var(--shadow-md);
+}
+
+/* Variation-specific styles */
+.variation-2 .skill-tag {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.variation-3 .skill-tag {
+    background-color: var(--color-muted);
+    border: 1px solid var(--color-primary);
+}
+
+.variation-4 .skill-tag {
+    background: var(--color-gradient-2);
+    color: var(--color-bg);
+}
+
+.variation-5 .skill-tag {
+    background: var(--color-glass-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--color-glass-border);
+}
+
+.variation-6 .skill-tag {
+    background-color: transparent;
+    border: 3px solid var(--color-text);
+    font-weight: var(--font-bold);
+    text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}

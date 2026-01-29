@@ -1,0 +1,46 @@
+.education {
+    background-color: var(--color-bg);
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--space-8);
+    margin-top: var(--space-12);
+}
+
+.education-card {
+    text-align: center;
+    padding: var(--space-8);
+}
+
+.education-icon {
+    font-size: var(--text-5xl);
+    margin-bottom: var(--space-4);
+}
+
+.institution-name {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-bold);
+    margin-bottom: var(--space-3);
+    line-height: var(--leading-tight);
+}
+
+.degree {
+    font-size: var(--text-lg);
+    font-weight: var(--font-semibold);
+    color: var(--color-text);
+    margin-bottom: var(--space-2);
+}
+
+.education-period {
+    font-size: var(--text-base);
+    color: var(--color-muted);
+    font-weight: var(--font-medium);
+}
+
+@media (max-width: 767px) {
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+}

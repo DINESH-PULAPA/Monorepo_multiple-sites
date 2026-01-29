@@ -1,0 +1,36 @@
+/* Site 6: Brutalist Bold */
+.variation-6 .card {
+  border: 4px solid var(--color-text);
+  border-radius: 0;
+  box-shadow: 8px 8px 0 var(--color-text);
+}
+
+.variation-6 .card:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 12px 12px 0 var(--color-text);
+}
+
+.variation-6 .btn {
+  border-radius: 0;
+  border: 3px solid var(--color-text);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.variation-6 .btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  border-color: var(--color-primary);
+}
+
+.variation-6 .btn-primary:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0 var(--color-text);
+}
+
+.variation-6 h1,
+.variation-6 h2,
+.variation-6 h3 {
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}

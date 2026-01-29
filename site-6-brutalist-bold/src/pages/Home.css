@@ -1,0 +1,111 @@
+.home {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: var(--space-16) 0;
+    color: #ffffff;
+}
+
+.home-header {
+    text-align: center;
+    margin-bottom: var(--space-16);
+}
+
+.home-title {
+    font-size: clamp(var(--text-4xl), 6vw, var(--text-7xl));
+    font-weight: var(--font-black);
+    margin-bottom: var(--space-6);
+    color: #ffffff;
+}
+
+.home-subtitle {
+    font-size: clamp(var(--text-lg), 2vw, var(--text-xl));
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: var(--leading-relaxed);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.variations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--space-8);
+    margin-bottom: var(--space-16);
+}
+
+.variation-card {
+    display: block;
+    background-color: #ffffff;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    text-decoration: none;
+    transition: all var(--transition-base);
+    box-shadow: var(--shadow-xl);
+}
+
+.variation-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.variation-color-bar {
+    height: 8px;
+    width: 100%;
+}
+
+.variation-content {
+    padding: var(--space-8);
+}
+
+.variation-name {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-bold);
+    color: #1a1a1a;
+    margin-bottom: var(--space-3);
+}
+
+.variation-description {
+    font-size: var(--text-base);
+    color: #666666;
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-4);
+}
+
+.variation-profile {
+    font-size: var(--text-sm);
+    font-weight: var(--font-semibold);
+    color: #999999;
+    margin-bottom: var(--space-4);
+}
+
+.variation-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--text-base);
+    font-weight: var(--font-semibold);
+    color: #667eea;
+    transition: all var(--transition-base);
+}
+
+.variation-card:hover .variation-cta {
+    gap: var(--space-3);
+    color: #764ba2;
+}
+
+.home-footer {
+    text-align: center;
+    padding-top: var(--space-12);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-note {
+    font-size: var(--text-base);
+    color: rgba(255, 255, 255, 0.8);
+    line-height: var(--leading-relaxed);
+}
+
+@media (max-width: 767px) {
+    .variations-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,142 @@
+{
+  "basics": {
+    "fulltimeResume": "true",
+    "firstName": "Sarah",
+    "lastName": "Jenkins",
+    "label": "Digital Marketing Manager",
+    "summary": "Results-oriented marketing strategist with a decade of experience in B2B SaaS and consumer goods. Expert in driving ROI through paid acquisition and content strategy.",
+    "headerContacts": [
+      {
+        "text": "US",
+        "link": "tel:+12125550199",
+        "icon": "Phone"
+      },
+      {
+        "text": "",
+        "link": "mailto:s.jenkins@marketing.com",
+        "icon": "Mail"
+      }
+    ],
+    "barContacts": [
+      {
+        "text": "",
+        "link": "https://www.linkedin.com/",
+        "icon": "LinkedIn"
+      }
+    ]
+  },
+  "achievements": [
+    {
+      "link": "#",
+      "head": "Top 30 Marketers Under 30",
+      "desc": "AdWeek 2022"
+    }
+  ],
+  "projects": [
+    {
+      "link": "#",
+      "company": "Q3 Brand Campaign",
+      "date": "2023-08",
+      "summary": "Led a cross-channel campaign that increased organic lead generation by 40% YoY.",
+      "highlights": [
+        "Managed a budget of $250k across LinkedIn, Google Ads, and Meta.",
+        "Coordinated with creative teams for video assets."
+      ]
+    }
+  ],
+  "additionalAudio": {
+    "popUpOrHeaderAudio": "audio1.mp3",
+    "skillsAudio": "audio1.mp3",
+    "educationAudio": "audio1.mp3"
+  },
+  "downloadFulltime": [],
+  "downloadFreelance": [],
+  "work": [
+    {
+      "company": "HubSpot",
+      "companyNameColor": "#FF7A59",
+      "start": {
+        "year": "2021",
+        "month": "03",
+        "position": "Growth Marketing Manager"
+      },
+      "end": {
+        "year": "Present",
+        "month": "",
+        "position": "Growth Marketing Manager"
+      },
+      "audioName": "audio1.mp3",
+      "summary": "Responsible for acquisition strategy for the enterprise CRM vertical.",
+      "highlights": [
+        "Optimized landing page conversion rates by 12% via A/B testing.",
+        "Launched a webinar series generating 5,000+ qualified leads.",
+        "Partnered with sales to refine lead scoring models."
+      ]
+    },
+    {
+      "company": "Ogilvy",
+      "companyNameColor": "#B20000",
+      "start": {
+        "year": "2017",
+        "month": "05",
+        "position": "Account Executive"
+      },
+      "end": {
+        "year": "2021",
+        "month": "02",
+        "position": "Account Executive"
+      },
+      "audioName": "audio2.mp3",
+      "summary": "Managed key accounts for FMCG clients.",
+      "highlights": [
+        "Developed social media strategies for global beverage brands.",
+        "Coordinated product launch events in NYC and Chicago."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Marketing",
+      "keywords": [
+        "SEO/SEM",
+        "Google Analytics",
+        "HubSpot CRM",
+        "Content Strategy",
+        "Email Automation",
+        "Copywriting"
+      ]
+    },
+    {
+      "name": "Tools",
+      "keywords": [
+        "Salesforce",
+        "Marketo",
+        "Asana",
+        "Tableau",
+        "WordPress"
+      ]
+    },
+    {
+      "name": "UI/UX Skills",
+      "keywords": [
+        "Landing Page Design",
+        "A/B Testing & Optimization",
+        "User Journey Mapping",
+        "Conversion Rate Optimization",
+        "Figma Basics",
+        "Visual Storytelling"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institutionFirstPart": "New York University",
+      "institutionSecondPart": "Stern School of Business",
+      "institutionColor": "#008DAC",
+      "area": "Marketing & Communications",
+      "studyType": "BS",
+      "startDate": "2013",
+      "endDate": "2017"
+    }
+  ]
+}
