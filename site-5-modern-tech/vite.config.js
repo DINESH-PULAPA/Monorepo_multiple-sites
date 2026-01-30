@@ -8,6 +8,7 @@ export default defineConfig({
   resolve: {
     alias: {
       'framer-motion': path.resolve(__dirname, 'node_modules/framer-motion'),
+      'lucide-react': path.resolve(__dirname, 'node_modules/lucide-react'),
       'react': path.resolve(__dirname, 'node_modules/react'),
       'react-dom': path.resolve(__dirname, 'node_modules/react-dom'),
       'react/jsx-runtime': path.resolve(__dirname, 'node_modules/react/jsx-runtime.js'),
