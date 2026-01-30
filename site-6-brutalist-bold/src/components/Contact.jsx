@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import Icon from '../components/Icon';
 import './Contact.css';
 
 const Contact = ({ data }) => {
@@ -49,7 +50,13 @@ const Contact = ({ data }) => {
                             transition={{ duration: 0.4, delay: index * 0.1 }}
                             whileHover={{ scale: 1.05 }}
                         >
-                            <span className="contact-icon">{getIconEmoji(contact.icon)}</span>
+                            <span className="contact-icon">
+                                <Icon
+                                    name={contact.icon}
+                                    size={48}
+                                    strokeWidth={1.5}
+                                />
+                            </span>
                             <span className="contact-label">
                                 {contact.text || getContactLabel(contact.icon)}
                             </span>
@@ -61,25 +68,12 @@ const Contact = ({ data }) => {
     );
 };
 
-// Helper functions
-const getIconEmoji = (icon) => {
-    const icons = {
-        Phone: '📱',
-        Mail: '✉️',
-        LinkedIn: '💼',
-        Dribbble: '🎨',
-        GitHub: '💻',
-        Twitter: '🐦',
-    };
-    return icons[icon] || '🔗';
-};
-
 const getContactLabel = (icon) => {
     const labels = {
         Phone: 'Call Me',
         Mail: 'Email Me',
         LinkedIn: 'LinkedIn',
-        Dribbble: 'Dribbble',
+        Dribbble: 'Portfolio',
         GitHub: 'GitHub',
         Twitter: 'Twitter',
     };

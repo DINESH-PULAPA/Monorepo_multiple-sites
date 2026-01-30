@@ -6,8 +6,8 @@ import Experience from '../../shared/components/Experience';
 import Skills from '../../shared/components/Skills';
 import Projects from '../../shared/components/Projects';
 import Education from '../../shared/components/Education';
-import Contact from '../../shared/components/Contact';
-import Footer from '../../shared/components/Footer';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 import profile1 from '../../profiles/profile1.json';
 import './App.css';
 

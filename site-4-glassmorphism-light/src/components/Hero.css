@@ -10,6 +10,8 @@
 .hero-content {
     max-width: 900px;
     text-align: center;
+    margin-inline: auto;
+    /* Ensure block centering */
 }
 
 .hero-greeting {
@@ -109,9 +111,7 @@
 /* Variation-specific styles */
 
 /* Variation 1: Minimalist Bold */
-.hero-variation-1 {
-    text-align: left;
-}
+/* Removed text-align: left override - now uses default centered layout */
 
 .hero-variation-1 .hero-content {
     max-width: 100%;
@@ -123,18 +123,80 @@
     background: none;
 }
 
-.hero-variation-1 .hero-cta {
-    justify-content: flex-start;
-}
+/* CTA buttons remain centered (removed flex-start override) */
 
 /* Variation 2: Professional Dark */
 .hero-variation-2 .hero-name {
     font-size: clamp(var(--text-6xl), 9vw, var(--text-8xl));
+    -webkit-text-fill-color: var(--color-text);
+    background: none;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+}
+
+.hero-variation-2 .hero-label {
+    color: var(--color-text);
+}
+
+.hero-variation-2 {
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
 }
 
 /* Variation 3: Modern Tech */
 .hero-variation-3 {
     background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-secondary) 100%);
+}
+
+.hero-variation-3 .hero-name {
+    background: linear-gradient(90deg, #E94560 0%, #9D4EDD 50%, #E94560 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradient-shift 3s ease infinite;
+}
+
+.hero-variation-3 .hero-label {
+    color: #9D4EDD;
+    text-shadow: 0 0 20px rgba(157, 78, 221, 0.5);
+}
+
+@keyframes gradient-shift {
+
+    0%,
+    100% {
+        background-position: 0% center;
+    }
+
+    50% {
+        background-position: 100% center;
+    }
+}
+
+/* Variation 5: Glassmorphism Light */
+.hero-variation-5 {
+    background: radial-gradient(circle at 30% 50%, rgba(14, 165, 233, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 70% 50%, rgba(56, 189, 248, 0.15) 0%, transparent 50%);
+}
+
+.hero-variation-5 .hero-content {
+    background: var(--color-glass-bg, rgba(255, 255, 255, 0.7));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--color-glass-border, rgba(255, 255, 255, 0.3));
+    border-radius: var(--radius-2xl);
+    padding: var(--space-12);
+    box-shadow: 0 8px 32px 0 rgba(14, 165, 233, 0.2);
+}
+
+.hero-variation-5 .hero-name {
+    background: linear-gradient(135deg, #0EA5E9 0%, #38BDF8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-variation-5 .hero-label {
+    color: #0284C7;
 }
 
 /* Variation 6: Brutalist */
@@ -164,13 +226,7 @@
         text-align: center;
     }
 
-    .hero-variation-1 {
-        text-align: center;
-    }
-
-    .hero-variation-1 .hero-cta {
-        justify-content: center;
-    }
+    /* Variation-1 responsive adjustments removed - uses default centered layout */
 
     .hero-cta {
         flex-direction: column;

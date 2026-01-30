@@ -1,13 +1,13 @@
 import { useEffect } from 'react';
 import Header from '../../shared/components/Header';
-import Hero from '../../shared/components/Hero';
+import Hero from './components/Hero';
 import About from '../../shared/components/About';
 import Experience from '../../shared/components/Experience';
 import Skills from '../../shared/components/Skills';
 import Projects from '../../shared/components/Projects';
 import Education from '../../shared/components/Education';
-import Contact from '../../shared/components/Contact';
-import Footer from '../../shared/components/Footer';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 import profile3 from '../../profiles/profile3.json';
 import './App.css';
 

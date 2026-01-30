@@ -32,6 +32,9 @@
 
 .contact-icon {
     font-size: var(--text-5xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact-label {

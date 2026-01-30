@@ -1,31 +1,33 @@
 import { motion } from 'framer-motion';
+import Icon from '../components/Icon';
 import './Hero.css';
+
+// Animation variants defined outside component for better performance
+const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.2,
+            delayChildren: 0.1,
+        },
+    },
+};
+
+const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: 0.6,
+            ease: 'easeOut',
+        },
+    },
+};
 
 const Hero = ({ data, variant = 'default' }) => {
     const { basics } = data;
-
-    const containerVariants = {
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: {
-                staggerChildren: 0.2,
-                delayChildren: 0.1,
-            },
-        },
-    };
-
-    const itemVariants = {
-        hidden: { opacity: 0, y: 30 },
-        visible: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                duration: 0.6,
-                ease: 'easeOut',
-            },
-        },
-    };
 
     return (
         <section className={`hero hero-${variant}`} id="hero">
@@ -63,7 +65,14 @@ const Hero = ({ data, variant = 'default' }) => {
                                         target={contact.link.startsWith('http') ? '_blank' : '_self'}
                                         rel={contact.link.startsWith('http') ? 'noopener noreferrer' : ''}
                                     >
-                                        {contact.icon && <span className="contact-icon">{contact.icon}</span>}
+                                        {contact.icon && (
+                                            <Icon
+                                                name={contact.icon}
+                                                size={18}
+                                                className="contact-icon"
+                                                strokeWidth={2}
+                                            />
+                                        )}
                                         {contact.text || getContactLabel(contact.icon)}
                                     </a>
                                 ))}
