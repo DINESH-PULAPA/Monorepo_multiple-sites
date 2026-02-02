@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+
 import Header from '../../shared/components/Header';
 import Hero from './components/Hero';
 import About from '../../shared/components/About';
@@ -11,22 +11,19 @@ import Footer from './components/Footer';
 import profile3 from '../../profiles/profile3.json';
 import './App.css';
 
-function App() {
-  useEffect(() => {
-    document.body.className = 'variation-3';
-    return () => {
-      document.body.className = '';
-    };
-  }, []);
+import { ThemeProvider, useTheme } from '../../shared/context/ThemeContext';
+
+function AppContent() {
+  const { theme } = useTheme();
 
   return (
-    <div className="variation-3">
+    <div className={theme}>
       <a href="#main" className="skip-to-main">
         Skip to main content
       </a>
-      <Header variant="variation-3" data={profile3} />
+      <Header variant={theme} data={profile3} />
       <main id="main">
-        <Hero data={profile3} variant="variation-3" />
+        <Hero data={profile3} variant={theme} />
         <About data={profile3} />
         <Experience data={profile3} />
         <Skills data={profile3} />
@@ -34,8 +31,16 @@ function App() {
         <Education data={profile3} />
         <Contact data={profile3} />
       </main>
-      <Footer variant="variation-3" data={profile3} />
+      <Footer variant={theme} data={profile3} />
     </div>
+  );
+}
+
+function App() {
+  return (
+    <ThemeProvider defaultTheme="variation-3">
+      <AppContent />
+    </ThemeProvider>
   );
 }
 
