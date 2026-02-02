@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { GraduationCap } from 'lucide-react';
 import './Education.css';
 
 const Education = ({ data }) => {
@@ -28,10 +29,11 @@ const Education = ({ data }) => {
                             viewport={{ once: true, margin: '-100px' }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                         >
-                            <div className="education-icon">🎓</div>
+                            <div className="education-icon">
+                                <GraduationCap className="w-6 h-6 text-primary" />
+                            </div>
                             <h3
-                                className="institution-name"
-                                style={{ color: edu.institutionColor || 'var(--color-primary)' }}
+                                className="institution-name text-[var(--text-secondary)]"
                             >
                                 {edu.institutionFirstPart}{' '}
                                 {edu.institutionSecondPart && <span>{edu.institutionSecondPart}</span>}

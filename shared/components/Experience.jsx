@@ -32,8 +32,7 @@ const Experience = ({ data }) => {
                             <div className="timeline-content card">
                                 <div className="job-header">
                                     <h3
-                                        className="company-name"
-                                        style={{ color: job.companyNameColor || 'var(--color-primary)' }}
+                                        className="company-name text-[var(--text-secondary)]"
                                     >
                                         {job.company}
                                     </h3>

@@ -39,7 +39,7 @@ const Hero = ({ data, variant = 'default' }) => {
                     animate="visible"
                 >
                     <motion.div className="hero-greeting" variants={itemVariants}>
-                        <span className="greeting-text">Hello, I'm</span>
+                        <span className="greeting-text text-cyan-500">Hello, I'm</span>
                     </motion.div>
 
                     <motion.h1 className="hero-name" variants={itemVariants}>
@@ -50,7 +50,7 @@ const Hero = ({ data, variant = 'default' }) => {
                         {basics.label}
                     </motion.p>
 
-                    <motion.p className="hero-summary" variants={itemVariants}>
+                    <motion.p className="hero-summary text-white" variants={itemVariants}>
                         {basics.summary}
                     </motion.p>
 

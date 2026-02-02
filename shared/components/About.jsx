@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Trophy } from 'lucide-react';
 import './About.css';
 
 const About = ({ data }) => {
@@ -49,8 +50,10 @@ const About = ({ data }) => {
                         <h3 className="achievements-title">Achievements & Recognition</h3>
                         {achievements.map((achievement, index) => (
                             <motion.div key={index} className="achievement-card card" variants={itemVariants}>
-                                <div className="achievement-icon">🏆</div>
-                                <h4 className="achievement-head">{achievement.head}</h4>
+                                <div className="achievement-icon">
+                                    <Trophy className="w-8 h-8 text-primary" />
+                                </div>
+                                <h4 className="achievement-head text-[var(--text-secondary)]">{achievement.head}</h4>
                                 <p className="achievement-desc">{achievement.desc}</p>
                                 {achievement.link && achievement.link !== '#' && (
                                     <a

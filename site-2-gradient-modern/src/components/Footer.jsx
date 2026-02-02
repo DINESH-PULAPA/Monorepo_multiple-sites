@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Icon from './Icon';
 import './Footer.css';
 
 const Footer = ({ variant = 'default', data }) => {
@@ -37,7 +38,7 @@ const Footer = ({ variant = 'default', data }) => {
                                     rel="noopener noreferrer"
                                     aria-label={contact.icon || 'Social link'}
                                 >
-                                    {getIconEmoji(contact.icon)}
+                                    <Icon name={contact.icon} size={20} strokeWidth={2} />
                                 </a>
                             ))}
                         </div>
@@ -57,16 +58,6 @@ const Footer = ({ variant = 'default', data }) => {
             )}
         </footer>
     );
-};
-
-const getIconEmoji = (icon) => {
-    const icons = {
-        LinkedIn: '💼',
-        GitHub: '💻',
-        Twitter: '🐦',
-        Dribbble: '🎨',
-    };
-    return icons[icon] || '🔗';
 };
 
 export default Footer;

@@ -69,6 +69,11 @@
 .footer-social-link:hover {
     transform: translateY(-4px) scale(1.1);
     background-color: var(--color-primary);
+    color: var(--color-bg);
+}
+
+.footer-social-link:hover svg {
+    stroke: var(--color-bg);
 }
 
 /* Back to Top Button */

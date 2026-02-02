@@ -46,6 +46,14 @@
     background-clip: text;
 }
 
+.hero-variation-4 .greeting-text {
+    color: var(--color-primary);
+}
+
+.hero-variation-4 .hero-summary {
+    color: var(--color-text);
+}
+
 .hero-label {
     font-size: clamp(var(--text-2xl), 4vw, var(--text-4xl));
     font-weight: var(--font-bold);
