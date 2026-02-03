@@ -1,0 +1,13 @@
+{
+    "name": "@portfolio/themes",
+    "version": "1.0.0",
+    "main": "src/ThemeContext.jsx",
+    "exports": {
+        ".": "./src/ThemeContext.jsx",
+        "./styles": "./src/index.css"
+    },
+    "dependencies": {
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0"
+    }
+}

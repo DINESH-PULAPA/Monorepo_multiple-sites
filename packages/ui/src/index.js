@@ -1,0 +1,11 @@
+export { default as About } from './components/sections/About';
+export { default as Contact } from './components/sections/Contact';
+export { default as Education } from './components/sections/Education';
+export { default as Experience } from './components/sections/Experience';
+export { default as Footer } from './components/layout/Footer';
+export { default as Header } from './components/layout/Header';
+export { default as Hero } from './components/sections/Hero';
+export { default as Icon } from './components/common/Icon';
+export { default as Projects } from './components/sections/Projects';
+export { default as Skills } from './components/sections/Skills';
+export { default as ThemeToggle } from './components/common/ThemeToggle';

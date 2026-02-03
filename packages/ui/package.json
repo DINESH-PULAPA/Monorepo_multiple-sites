@@ -1,0 +1,13 @@
+{
+    "name": "@portfolio/ui",
+    "version": "1.0.0",
+    "main": "src/index.js",
+    "dependencies": {
+        "@portfolio/themes": "*",
+        "framer-motion": "^12.0.0",
+        "lucide-react": "^0.563.0",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0",
+        "prop-types": "^15.8.1"
+    }
+}
