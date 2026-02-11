@@ -118,6 +118,24 @@
 
 /* Variation-specific styles */
 
+/* Ensure text readability in dark variations */
+.hero-variation-2 .greeting-text,
+.hero-variation-3 .greeting-text,
+.hero-variation-4 .greeting-text {
+    color: var(--color-text);
+    /* Force white/light text */
+    opacity: 0.9;
+}
+
+.hero-variation-2 .hero-summary,
+.hero-variation-3 .hero-summary,
+.hero-variation-4 .hero-summary {
+    color: rgba(255, 255, 255, 0.8);
+    /* Explicitly force light text */
+    opacity: 1;
+    /* Ensure full opacity if set elsewhere */
+}
+
 /* Variation 1: Minimalist Bold */
 /* Removed text-align: left override - now uses default centered layout */
 

@@ -21,6 +21,12 @@
     box-shadow: 0 0 15px rgba(233, 69, 96, 0.3);
 }
 
+/* Variation 4: Gradient Modern */
+.variation-4 .achievement-card {
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+}
+
 /* Variation 5: Glassmorphism */
 .variation-5 .achievement-card {
     background: rgba(255, 255, 255, 0.4);
@@ -28,6 +34,12 @@
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.5);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Variation 6: Brutalist */
+.variation-6 .achievement-card {
+    border: 3px solid var(--color-text);
+    background-color: transparent;
 }
 
 .section-title {
@@ -48,6 +60,17 @@
     height: 4px;
     background-color: var(--color-primary);
     border-radius: var(--radius-full);
+}
+
+
+
+/* Ensure subtitle readability in dark variations */
+/* Ensure subtitle readability in dark variations */
+.variation-2 .about .section-subtitle,
+.variation-3 .about .section-subtitle,
+.variation-4 .about .section-subtitle {
+    color: rgba(255, 255, 255, 0.8) !important;
+    opacity: 1;
 }
 
 .section-subtitle {
@@ -104,6 +127,14 @@
     align-items: center;
     gap: var(--space-1);
     transition: all var(--transition-base);
+}
+
+/* Ensure achievement description readability in dark variations */
+.variation-2 .achievement-desc,
+.variation-3 .achievement-desc,
+.variation-4 .achievement-desc {
+    color: rgba(255, 255, 255, 0.8);
+    /* Will use the new lighter muted colors */
 }
 
 .achievement-link:hover {

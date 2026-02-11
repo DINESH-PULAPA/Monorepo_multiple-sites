@@ -2,6 +2,29 @@
     background-color: var(--color-bg);
 }
 
+
+
+/* Ensure text readability in dark variations */
+/* Higher specificity to override any defaults */
+.variation-2 .experience .job-period,
+.variation-3 .experience .job-period,
+.variation-4 .experience .job-period,
+.variation-2 .experience .job-summary,
+.variation-3 .experience .job-summary,
+.variation-4 .experience .job-summary,
+.variation-2 .experience .job-position,
+.variation-3 .experience .job-position,
+.variation-4 .experience .job-position {
+    color: rgba(255, 255, 255, 0.8) !important;
+    opacity: 1;
+}
+
+.variation-2 .job-highlights li,
+.variation-3 .job-highlights li,
+.variation-4 .job-highlights li {
+    color: var(--color-text);
+}
+
 .timeline {
     position: relative;
     max-width: 900px;

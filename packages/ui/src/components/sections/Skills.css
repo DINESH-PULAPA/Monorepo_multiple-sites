@@ -46,30 +46,65 @@
 }
 
 /* Variation-specific styles */
+
+/* Skills Container Styling (Match Contact Section) */
+.variation-2 .skill-group,
+.variation-3 .skill-group,
+.variation-4 .skill-group {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-xl);
+    /* Ensure consistent border radius */
+}
+
+.variation-6 .skill-group {
+    border: 3px solid var(--color-text);
+    background-color: transparent;
+    border-radius: var(--radius-xl);
+}
+
+.skill-group {
+    transition: all var(--transition-base);
+}
+
+/* Hover effects are now handled globally by .card:hover in index.css */
+
+.variation-1 .skill-tag {
+    background-color: #000000;
+    color: #FFD60A;
+    border: 1px solid #000000;
+}
+
 .variation-2 .skill-tag {
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #FFFFFF;
 }
 
 .variation-3 .skill-tag {
-    background-color: var(--color-muted);
+    background-color: rgba(255, 255, 255, 0.05);
     border: 1px solid var(--color-primary);
+    color: #FFFFFF;
+    /* Ensure dark text on light muted bg */
 }
 
 .variation-4 .skill-tag {
     background: var(--color-gradient-2);
-    color: var(--color-bg);
+    color: #FFFFFF;
 }
 
 .variation-5 .skill-tag {
     background: var(--color-glass-bg);
     backdrop-filter: blur(10px);
     border: 1px solid var(--color-glass-border);
+    color: var(--color-text);
+    /* Ensure dark text on glass bg */
 }
 
 .variation-6 .skill-tag {
     background-color: transparent;
     border: 3px solid var(--color-text);
+    color: var(--color-text);
     font-weight: var(--font-bold);
     text-transform: uppercase;
 }

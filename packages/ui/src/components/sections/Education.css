@@ -39,8 +39,28 @@
     font-weight: var(--font-medium);
 }
 
+/* Ensure text readability in dark variations */
+.variation-2 .education-period,
+.variation-3 .education-period,
+.variation-4 .education-period {
+    color: rgba(255, 255, 255, 0.8);
+}
+
 @media (max-width: 767px) {
     .education-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* Variation-specific styles */
+.variation-2 .education-card,
+.variation-3 .education-card,
+.variation-4 .education-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.variation-6 .education-card {
+    border: 3px solid var(--color-text);
+    background-color: transparent;
 }

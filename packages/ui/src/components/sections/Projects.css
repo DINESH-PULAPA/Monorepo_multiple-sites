@@ -15,10 +15,20 @@
     transition: all 0.3s ease;
 }
 
-.variation-3 .project-card:hover {
-    transform: translateY(-5px);
-    border-color: #00D9FF;
-    box-shadow: 0 0 20px rgba(0, 217, 255, 0.2);
+
+
+/* Hover effects are now handled globally by .card:hover in index.css */
+
+/* Variation 4: Gradient Modern */
+.variation-4 .project-card {
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+/* Variation 6: Brutalist */
+.variation-6 .project-card {
+    border: 3px solid var(--color-text);
+    background-color: transparent;
 }
 
 /* Variation 5: Glassmorphism */
@@ -30,10 +40,9 @@
     box-shadow: 0 8px 32px rgba(14, 165, 233, 0.1);
 }
 
-.variation-5 .project-card:hover {
-    background: rgba(255, 255, 255, 0.7);
-    transform: scale(1.02);
-}
+
+
+/* Hover effects are now handled globally by .card:hover in index.css */
 
 .projects-grid {
     display: grid;
@@ -47,6 +56,16 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+}
+
+/* Ensure text readability in dark variations */
+.variation-2 .project-date,
+.variation-3 .project-date,
+.variation-4 .project-date,
+.variation-2 .project-highlights li,
+.variation-3 .project-highlights li,
+.variation-4 .project-highlights li {
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .project-header {

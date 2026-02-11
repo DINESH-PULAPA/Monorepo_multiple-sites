@@ -2,6 +2,14 @@
     background-color: var(--color-bg);
 }
 
+/* Ensure subtitle readability in dark variations */
+.variation-2 .contact .section-subtitle,
+.variation-3 .contact .section-subtitle,
+.variation-4 .contact .section-subtitle {
+    color: rgba(255, 255, 255, 0.8) !important;
+    opacity: 1;
+}
+
 .contact-links {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -25,10 +33,9 @@
     min-height: 150px;
 }
 
-.contact-link:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-xl);
-}
+
+
+/* Hover effects are now handled globally by .card:hover in index.css */
 
 .contact-icon {
     font-size: var(--text-5xl);
@@ -50,4 +57,17 @@
     .contact-links {
         grid-template-columns: 1fr;
     }
+}
+
+/* Variation-specific styles */
+.variation-2 .contact-link,
+.variation-3 .contact-link,
+.variation-4 .contact-link {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.variation-6 .contact-link {
+    border: 3px solid var(--color-text);
+    background-color: transparent;
 }
